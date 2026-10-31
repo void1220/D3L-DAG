@@ -1,0 +1,8 @@
+CVAE-Opt adaptation includes Encoder, Pointer, Attention and Embedding code from
+André Hottung, Bhanu Bhandari and Kevin Tierney, Learning a Latent Search Space
+for Routing Problems using Variational Autoencoders, ICLR 2021.
+Upstream: https://github.com/ahottung/CVAE-Opt
+The upstream code is licensed under GPL-3.0; see licenses/CVAE-Opt_LICENSE.
+Upstream also credits https://github.com/mveres01/pytorch-drl4vrp.
+The DTS adaptation uses task-processor pair tokens, feasibility masks and a
+structural-history head. Trans-RL is a two-role scheduling adaptation.
