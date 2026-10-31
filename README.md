@@ -4,11 +4,17 @@ D3L is a discrete diffusion-based framework for heterogeneous DAG scheduling, wi
 
 ## Figures
 
+The framework combines offline diffusion training with online schedule generation.
+
 ![Framework](result/framework.png)
+
+D3L denoises schedule tokens with relation-biased self-attention and optional conditional cross-attention.
 
 ![Algorithm](result/algorithm.png)
 
 [Algorithm PDF](result/algorithm.pdf)
+
+The feature design captures execution costs and structural information from heterogeneous DAG instances.
 
 ![Feature Design](result/feature.png)
 

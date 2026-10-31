@@ -1,4 +1,4 @@
-"""Relation-biased diffusion Transformer and optional condition encoders."""
+"""D3L diffusion Transformer and optional condition encoders."""
 import math
 import torch
 from torch import nn
@@ -29,7 +29,7 @@ class GraphBlock(nn.Module):
         h = self.attend(h, rel)
         return h + F.dropout(self.ff(h), self.dropout, self.training)
 
-class GraphMaskModel(nn.Module):
+class D3L(nn.Module):
 
     def __init__(self, n, m, width=256, layers=6, heads=8, dropout=0.05, steps=30, noise_schedule='linear', feature_dim=17, feature_mode='full', cross_attention=False):
         super().__init__()
