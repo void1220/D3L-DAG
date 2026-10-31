@@ -8,7 +8,7 @@ The framework combines offline diffusion training with online schedule generatio
 
 ![Framework](result/framework.png)
 
-D3L denoises schedule tokens with relation-biased self-attention and optional conditional cross-attention.
+D3L denoises schedule tokens with relation-biased self-attention and conditional cross-attention.
 
 ![Algorithm](result/algorithm.png)
 
